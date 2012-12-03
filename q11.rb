@@ -1,6 +1,6 @@
 class ArticleDecorator < ApplicationDecorator
   decorates :article
- 
+
   def published_at
     model.published_at.strftime("%A, %B %e")
   end
